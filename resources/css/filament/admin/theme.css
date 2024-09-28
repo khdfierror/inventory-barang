@@ -1,0 +1,10 @@
+@import '/vendor/filament/filament/resources/css/theme.css';
+
+@config 'tailwind.config.js';
+
+/**
+    fix glitch select on spa mode
+*/
+.fi-fo-select select:not(.fi-select-input){
+    @apply opacity-0 max-h-[30px];
+}
